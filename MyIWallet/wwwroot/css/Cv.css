@@ -1,0 +1,96 @@
+﻿body {
+}
+.cv {
+    word-wrap: break-word;
+    width: 700px;
+    margin: auto;
+}
+
+.cv-header {
+    height: 250px;
+    display: flex;
+}
+
+.cv-header__left {
+    width: 230px;
+    margin-right: 20px;
+}
+
+.cv-header__photo {
+    display: flex;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv-header__photo--image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid orange;
+}
+
+.cv-header__right {
+    width: 550px;
+}
+
+.cv-header__fullname {
+    font-size: 40px;
+    display: flex;
+    font-weight: 800;
+}
+
+.black {
+    color: black;
+}
+
+.cv-main__orange {
+    color: orange;
+}
+.cv-header__orange {
+    color: orange;
+}
+
+.cv-main__bottom {
+    margin-bottom: 30px;
+}
+
+.cv-main__summary--header {
+    font-size: 25px;
+    color: orange;
+    font-size: 700;
+    margin-bottom: 10px;
+}
+
+.cv-main__skill--header {
+    font-size: 25px;
+    color: orange;
+    font-size: 700;
+    margin-bottom: 10px;
+}
+
+.cv-main__experience--header {
+    font-size: 25px;
+    color: orange;
+    font-size: 700;
+    margin-bottom: 10px;
+}
+
+.cv-main__education--header {
+    font-size: 25px;
+    color: orange;
+    font-size: 700;
+    margin-bottom: 10px;
+}
+
+.cv-main__certifications--header {
+    font-size: 25px;
+    color: orange;
+    font-size: 700;
+    margin-bottom: 10px;
+}
+
+.cv-main__skill--text {/*
+    display: flex;
+    justify-content: space-evenly;*/
+}

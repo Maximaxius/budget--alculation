@@ -1,0 +1,41 @@
+﻿@model BalanceViewModel
+
+<h3>Аккаунт пользователя = @Model.Email</h3>
+<h3>Вданный момент в кошельке @Model.Amount</h3>
+
+<div>
+    <h3>История</h3>
+
+    @if (Model.Transactions.Any())
+    {
+        <table>
+            <tr>
+                <th>Тип</th>
+                <th>Сумма</th>
+                <th>Описание</th>
+                <th>Дата</th>
+            </tr>
+
+            @foreach (var item in Model.Transactions)
+            {
+                <tr>
+                    <td>@item.Type</td>
+                    <td>@item.Amount</td>
+                    <td>@item.Description</td>
+                    <td>@item.CreationTime</td>
+                </tr>
+            }
+
+        </table>
+    }
+    else
+    {
+        <p>История пуста</p>
+    }
+
+</div>
+
+@section Links{
+    <link rel="stylesheet" href="~/css/Balance.css" asp-append-version="true" />
+}
+    

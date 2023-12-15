@@ -1,0 +1,35 @@
+﻿@using MyIWallet.Enums;
+@model TransactionViewModel
+
+<h2>Добавить транзакцию</h2>
+<form method="post" asp-controller="Wallet" asp-action="Transaction" enctype="multipart/form-data">
+
+    <div class="transaction-form__type transaction-form__bottom">
+        <p class="transaction-input__text--type">Type</p>
+        <select id="Type" name="Type">
+            <option value="Income">Доход</option>
+            <option value="Expense">Расход</option>
+        </select>
+    </div>
+
+    <div class="transaction-form__description transaction-form__bottom">
+        <p class="transaction-input__text--description">Description</p>
+        <textarea name="Description" cols="40" rows="3" class="transaction-input__description" placeholder="Description"></textarea>
+    </div>
+
+    <div class="transaction-form__amount transaction-form__bottom">
+        <p class="transaction-input__text--amount">Amount</p>
+        <input name="Amount" type="number" class="transaction-input__amount" placeholder="Amount" min="0">
+    </div>
+
+    <button type="submit">Send data</button>
+</form>
+
+
+        @*посмотреть нужно ли вообще JS ПОЛДКЛЮЧАТ  или вырезать *@
+@section Scripts{
+    <script src="~/js/cv-input.js" asp-append-version="true"></script>
+}
+@section Links{
+    <link rel="stylesheet" href="~/css/Inp.css" asp-append-version="true" />
+}

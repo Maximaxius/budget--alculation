@@ -1,0 +1,7 @@
+﻿td {
+    word-wrap: break-word;
+    max-width: 300px;
+}
+tr {
+    border-bottom: solid 2px gray;
+}
